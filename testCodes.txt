@@ -1,3 +1,5 @@
+# Test on branch_2
+# Not sure why HEAD is still in the file???
 <<<<<<< HEAD
 ## create a repo on GitHub
 =======
