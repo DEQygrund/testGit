@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-## create a repo on GitHub
-=======
 ## created a repo on GitHub
->>>>>>> 5f0bb6b9ae9b350b1367b8313375c6290e0fae31
 git clone https://github.com/deqygrund/testgit.git
 cd ./testgit
 ## added a testCodes.txt in ./testgit/ (local)
@@ -16,11 +12,7 @@ git push
 git branch branch_2
 git checkout branch_2
 git push --set-upstream origin branch_2
-<<<<<<< HEAD
-## branch_2 has testCodes.txt
-=======
 ## branch_2 has testCodes.txt
 ## edited testCodes.txt in ./testgit/ (local)
 git status
 ## edited testCodes.txt in branch_2 on GitHub
->>>>>>> 5f0bb6b9ae9b350b1367b8313375c6290e0fae31
