@@ -1,3 +1,15 @@
+## create a repo on GitHub
 git clone https://github.com/deqygrund/testgit.git
 cd ./testgit
+## added a testCodes.txt in ./testgit/ (local)
+## created a branch_1 on GitHub before commit/push testCodes.txt to GitHub
+## branch_1 has no testCodes.txt
 git status
+git add testCodes.txt
+git commit
+git push
+## created a branch_2 using git command
+git branch branch_2
+git checkout branch_2
+git push --set-upstream origin branch_2
+## branch_2 has testCodes.txt
