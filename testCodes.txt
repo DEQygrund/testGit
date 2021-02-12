@@ -7,6 +7,7 @@ cd ./testgit
 ## created a branch_1 on GitHub before commit/push testCodes.txt to GitHub
 ## branch_1 has no testCodes.txt
 # Test on branch_2
+###(main)
 git status
 git add testCodes.txt
 git commit
@@ -20,3 +21,32 @@ git push --set-upstream origin branch_2
 git status
 ## edited testCodes.txt in branch_2 on GitHub
 #Test on branch_2
+git checkout main
+## edited testCodes.txt in ./testgit/ (local)
+git status
+git add testCodes.txt
+git commit
+git push
+## edited testCodes.txt in branch_2 on GitHub
+### summary of results from above steps:
+####--main: testCodes.txt version 1
+####--branch_1: no testCodes.txt
+####--branch_2: testCodes.txt version 2
+## testing goal: merge main testCodes.txt version 1 to both branches
+git checkout branch_1
+git fetch origin
+git merge origin/main
+git push
+## result: testCodes.txt version 1 has been merged to branch_1
+git checkout branch_2
+git fetch origingit merge origin/main
+git branch -va
+# branch_2 [ahead 1, behid 1] test3: changes made in main
+# remotes/origin/branch_2 test2: changes made in branch_2
+git status
+git merge
+git push
+git branch -va
+# branch_2 merge main to branch
+# remotes/origin/branch_2 test4: merge main to branch
+# SUCCEED
