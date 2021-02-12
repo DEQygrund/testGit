@@ -10,6 +10,7 @@ cd ./testgit
 ## added a testCodes.txt in ./testgit/ (local)
 ## created a branch_1 on GitHub before commit/push testCodes.txt to GitHub
 ## branch_1 has no testCodes.txt
+# Test on branch_2
 git status
 git add testCodes.txt
 git commit
@@ -26,3 +27,4 @@ git push --set-upstream origin branch_2
 git status
 ## edited testCodes.txt in branch_2 on GitHub
 >>>>>>> 5f0bb6b9ae9b350b1367b8313375c6290e0fae31
+#Test on branch_2
